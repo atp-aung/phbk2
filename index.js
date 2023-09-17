@@ -71,7 +71,7 @@ app.post('/api/persons', (request, response) => {
         })
     }
 
-    if (!body.number) {
+    else if (!body.number) {
         return response.status(400).json({
             error: 'number missing'
         })
